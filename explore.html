@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-header_div">
+            <a href="" class="home-button_a">
+                <img src="images/logo-nobackground.png">
+            </a>
+        </div>
+        <div class="nav_div">
+            <a href="homepage.html">HOME</a>
+            <a href="#" class="this.page right">LIVROS</a>
+        </div>
+        <div class="conta_div">
+            <button class="conta_button"><a href="loginpage.html" class="entrar_a">ENTRAR</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="filtering_div">
+            <div class="topRow-filtering_div">
+                <form class="filter_form">
+                    <div class="filter-gen_div">
+                        <label for="">Gênero</label>
+                        <select name="generos">
+
+                            <option value="Fantasia">Fantasia</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Ficção Científica">Ficção Científica</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Terror">Terror</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="countResults_div">
+                    Exibindo <b id="count_b">5</b> resultados
+                </div>
+            </div>
+        </div>
+        <div class="book-grid_div" id="bookGrid">
+            <div class="book-card_div">
+                <img src="images/capa2.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">A Paciente Silenciosa</span>
+                    <span class="book-author">Alex Michaelides</span>
+                    <span class="book-summary">Segredos silenciados desencadeiam um suspense intenso em uma paciente
+                        enigmática. </span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa10.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">O Clube do Livro dos Homens</span>
+                    <span class="book-author">Lyssa Kay Adams</span>
+                    <span class="book-summary">Uma jornada transformadora de homens através da leitura e amizade.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa30.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">O Código Da Vinci</span>
+                    <span class="book-author">Dan Brown</span>
+                    <span class="book-summary">Uma busca por segredos ancestrais que pode abalar o mundo.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa4.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Devoradores de Estrelas</span>
+                    <span class="book-author">Andy Weir</span>
+                    <span class="book-summary">Uma ameaça cósmica consome estrelas, desencadeando uma corrida
+                        desesperada pela sobrevivência. </span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa9.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Pessoas Normais</span>
+                    <span class="book-author">Sally Rooney</span>
+                    <span class="book-summary">Uma história cativante sobre as complexidades e relações de pessoas
+                        comuns.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa13.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">A Cantiga dos Pássaros e das Serpentes</span>
+                    <span class="book-author">Suzanne Collins</span>
+                    <span class="book-summary">Um prelúdio sombrio revela as origens de um vilão em uma sociedade
+                        distópica. </span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa14.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Percy Jackson e o Mar de Monstros</span>
+                    <span class="book-author">Rick Riordan</span>
+                    <span class="book-summary">
+                        Percy Jackson encara perigosas criaturas em sua busca pelo lendário Mar de Monstros. </span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa15.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">A Desconhecida</span>
+                    <span class="book-author">Peter Swanson</span>
+                    <span class="book-summary">Um encontro casual desencadeia uma perigosa obsessão com consequências
+                        imprevisíveis.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa16.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">O Hobbit</span>
+                    <span class="book-author">J.R.R. Tolkien</span>
+                    <span class="book-summary">Uma jornada inesperada leva um hobbit a aventuras épicas e encontros com
+                        criaturas míticas.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa17.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Recursão</span>
+                    <span class="book-author">Blake Crouch</span>
+                    <span class="book-summary">Realidade e memória se fundem em um loop infinito, desafiando a sanidade
+                        humana.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa18.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">O Príncipe Cruel</span>
+                    <span class="book-author">Holly Black</span>
+                    <span class="book-summary">No mundo das fadas, uma garota humana se vê envolvida em uma perigosa
+                        intriga de poder e traição.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa19.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Circe</span>
+                    <span class="book-author">Madeline Miller</span>
+                    <span class="book-summary">A história épica de Circe, uma poderosa feiticeira, que enfrenta deuses e
+                        desafia o destino em busca de sua própria identidade.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa20.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">O Nome do Vento</span>
+                    <span class="book-author">Patrick Rothfuss</span>
+                    <span class="book-summary">As aventuras de Kvothe, um músico prodigioso em busca de respostas e
+                        vingança em um mundo repleto de magia e mistério.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa21.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Cidade dos Ossos</span>
+                    <span class="book-author">Cassandra Clare</span>
+                    <span class="book-summary">
+                        Uma jovem caçadora de demônios mergulha em um submundo oculto para desvendar segredos sombrios
+                        na Cidade dos Ossos.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa22.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">De Férias Com Você</span>
+                    <span class="book-author">Emily Henry</span>
+                    <span class="book-summary">Em uma viagem inesperada, dois estranhos descobrem um amor improvável e
+                        enfrentam os desafios do passado e do presente juntos.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination_div">
+            <a class="active">1</a>
+            <a href="explore-page2.html">2</a>
+            <a href="explore-page2.html"><i data-lucide="chevron-right"></i></a>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+<script>
+    const borrowButtons = document.querySelectorAll('.borrow_button');
+
+    borrowButtons.forEach((button) => {
+        let isBorrowed = false;
+
+        button.addEventListener('click', () => {
+            if (isBorrowed) {
+                button.textContent = 'Adquirir';
+                isBorrowed = false;
+            } else {
+                button.textContent = 'Devolver';
+                isBorrowed = true;
+            }
+        });
+    });
+</script>
+
+</html>

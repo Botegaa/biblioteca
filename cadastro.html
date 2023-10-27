@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="icon" type="image/png" href="images/logo-livro.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+
+</head>
+
+<body>
+    <div class="login-page_div">
+        <div class="login-page-logo_div">
+            <img alt="Biblioteca Monteiro Lobato" src="images/logo-nobackground.png" class="logo-login">
+        </div>
+        <div class="direita_div">
+            <div class="login_div">
+                <img src="images/Reading.svg" class="readings_img">
+                <form method="post" onsubmit="return Validate()" class="signin-menu_form" name="signin"
+                    action="homepage.html">
+                    <input type="text" class="nome" name="nome" placeholder="Nome de Usuário">
+                    <div id="nome-erro" class="val_erro"></div>
+                    <input type="email" class="email" name="email" placeholder="E-mail">
+                    <div id="email-erro" class="val_erro"></div>
+                    <input type="password" class="senha" name="senha" placeholder="senha" minlength="8">
+                    <div id="senha-erro" class="val_erro"></div>
+                    <input type="password" class="confirmar-senha" name="confirmar-senha" placeholder="confirmar senha">
+                    <div id="csenha-erro" class="val_erro"></div>
+                    <button class="botao"><input type="submit" value="Criar Conta" name="criarConta"
+                            id="entrar"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const formulario = document.querySelector("form");
+    const nome = document.querySelector(".nome");
+    const email = document.querySelector(".email");
+    const senha = document.querySelector(".senha");
+
+    const cadastrar = () => {
+
+        const data = {
+            nome: nome.value,
+            senha: senha.value,
+            email: email.value
+        }
+
+        fetch("http:/localhost:8080/api/usuarios", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((result) => {
+                console.log(result);
+            })
+            .catch((error) => {
+                console.error("Erro durante a solicitação:", error);
+            });
+        const dados = {
+            nome: nome.value,
+            email: email.value,
+            senha: senha.value
+        }
+    }
+</script>
+<script>
+    var Inome = document.forms["signin"]["nome"];
+    var Iemail = document.forms["signin"]["email"];
+    var Isenha = document.forms["signin"]["senha"];
+    var Icsenha = document.forms["signin"]["confirmar-senha"];
+
+    var nomeErro = document.getElementById("nome-erro");
+    var emailErro = document.getElementById("email-erro");
+    var senhaErro = document.getElementById("senha-erro");
+    var csenhaErro = document.getElementById("csenha-erro");
+
+    Inome.addEventListener("blur", nomeVerify, true);
+    Iemail.addEventListener("blur", emailVerify, true);
+    Isenha.addEventListener("blur", senhaVerify, true);
+
+    function Validate() {
+        if (Inome.value == "") {
+            nomeErro.textContent = "Este campo é obrigatório.";
+            Inome.focus();
+            return false;
+        }
+        if (Iemail.value == "") {
+            emailErro.textContent = "Este campo é obrigatório.";
+            Iemail.focus();
+            return false;
+        }
+        if (Isenha.value == "") {
+            senhaErro.textContent = "Este campo é obrigatório.";
+            Isenha.focus();
+            return false;
+        }
+
+        if (Isenha.value != Icsenha.value) {
+            csenhaErro.innerHTML = "As senhas devem ser iguais";
+            return false;
+        }
+
+        cadastrar();
+
+        document.forms["signin"].submit();
+
+        return true;
+    }
+
+    function nomeVerify() {
+        if (Inome.value != "") {
+            nomeErro.innerHTML = "";
+            return true;
+        }
+    }
+    function emailVerify() {
+        if (Iemail.value != "") {
+            emailErro.innerHTML = "";
+            return true;
+        }
+    }
+    function senhaVerify() {
+        if (Isenha.value != "") {
+            senhaErro.innerHTML = "";
+            return true;
+        }
+    }
+</script>
+
+</html>

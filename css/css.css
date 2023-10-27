@@ -1,0 +1,271 @@
+body {
+    background-color: #c0a4fb;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.header {
+    box-sizing: border-box;
+    /*border box acho que é pra se precisar colocar tamanho nas coisas, o tamanho total já incluir borda e margem ou algo assim*/
+    /*0 certezas*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+    a {
+    color: black;
+    text-decoration: none;
+}
+
+.home_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colunas_div {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.esquerda_div {
+    width: 80%;
+}
+
+.pop_div {
+    background-color: #dac9ff;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.2));
+}
+
+.pop-header_div {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pop-setas_div {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.seta_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.divider_hr {
+    border: solid black 0.1px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.button-home {
+    justify-content: left;
+}
+
+.pop-capas_div {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.pop-capas_div::-webkit-scrollbar {
+    display: none;
+}
+
+.pop-capas_div div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.pop-capas_div img {
+    width: auto;
+    height: 240px;
+    transition: transform 0.5s;
+}
+
+.pop-capas_div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.gen-capas1_div {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gen-capas1_div::-webkit-scrollbar {
+    display: none;
+}
+
+.gen-capas1_div div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gen-capas1_div img {
+    width: auto;
+    height: 240px;
+    transition: transform 0.5s;
+}
+
+.gen-capas1_div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.gen-setas_div {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.generos_div {
+    background-color: #dac9ff;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.2));
+    overflow: hidden;
+}
+
+.gen-header_div {
+    width: 100%;
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gen-tabs_div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gen-tabs_div>div {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.gen-tab-links_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gen-tab-links_div>div {
+    text-align: center;
+}
+
+.gen-tab-links_div>div.tab-active_div {
+    font-weight: 700;
+}
+
+.tab-indicator_div {
+    width: calc(100% / 5);
+    height: 4px;
+    background: black;
+    border-radius: 4px;
+}
+
+.gen-tab-body_div {
+    width: 100%;
+    position: relative;
+}
+
+.gen-tab-body_div>div {
+    top: -200%;
+    position: relative;
+    opacity: 1;
+    margin-top: 5px;
+    transform: scale(0.9);
+    transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+}
+
+.gen-tab-body_div>div.active {
+    top: 0%;
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 0px;
+}
+
+.tab_div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tab_div img {
+    width: auto;
+    height: 250px;
+}
+
+.sobre-nos {
+    background-color: #dac9ff;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+    height: 800px;
+    filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.2));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo-png {
+    margin-top: 50px;
+    width: 40%;
+    margin-left: 340px;
+    padding-bottom: 50px;
+}
+
+.foto-texto {
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.foto-texto img {
+    width: auto;
+    height: 400px;
+    padding-right: 100px;
+}
+
+.foto-texto p {
+    width: 50%;
+    padding-left: 100px;
+}

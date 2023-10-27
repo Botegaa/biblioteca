@@ -1,0 +1,230 @@
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #c0a4fb;
+    font-family: 'Red Hat Text', sans-serif;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header {
+    /* background-color: #55e; */
+    width: 100%;
+    height: 90px;
+    margin-bottom: 30px;
+    padding: 20px 50px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1111111;
+}
+
+header div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-button_a{
+    height: 100%;
+}
+
+.home-button_a img {
+    height: 100%;
+    width: auto;
+}
+
+.nav_div {
+    justify-content: center;
+}
+
+.nav_div a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.right {
+    border-left: solid 1px #000;
+}
+
+.conta_div {
+    justify-content: flex-end;
+}
+
+.conta_button {
+    background-color: #D9FE8D;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+
+.conta_button:hover {
+    background-color: #ecfec6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.filtering_div {
+    background-color: #dac9ff;
+    box-shadow: 0 1px 6px #777;
+    box-sizing: border-box;
+    width: 80%;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topRow-filtering_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-gen_div {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+.filter-gen_div select {
+    background-color: transparent;
+    border: none;
+    border-left: solid 1px #ddd;
+    outline: none;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.countResults_div {
+    text-align: end;
+}
+
+.book-grid_div {
+    box-sizing: border-box;
+    width: 80%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.book-card_div {
+    background-color: #dac9ff;
+    height: 250px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 6px #777;
+}
+
+.data-container_div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.book-cover_img {
+    height: 100%;
+    width: auto;
+}
+
+.book-data_div {
+    height: 100%;
+    max-height: 200px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.book-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.book-author {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.book-summary {
+    margin-bottom: 10px;
+}
+
+.button-container_div {
+    display: flex;
+    justify-content: end;
+}
+
+.borrow_button {
+    background-color: #D9FE8D;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.borrow_button:hover {
+    background-color: #ecfec6;
+}
+
+.pagination_div {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pagination_div a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.pagination_div a.active {
+    background-color: #dac9ff;
+    box-shadow: 0 1px 6px #777;
+    cursor: default;
+}
+
+.pagination_div a:not(.active):hover {
+    background-color: rgba(218, 201, 255, 0.5);
+}

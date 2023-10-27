@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+    <link rel="icon" type="image/png" href="images/logo-livro.png">
+    <title>Biblioteca Monteiro Lobato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+</head>
+<header>
+    <div class="logo-header_div">
+        <a href="" class="home-button_a">
+            <img src="images/logo-nobackground.png">
+        </a>
+    </div>
+    <div class="nav_div">
+        <a href="#">HOME</a>
+        <a href="explore.html" class="this.page right">LIVROS</a>
+    </div>
+    <div class="conta_div">
+        <button class="conta_button"><a href="loginpage.html" class="entrar_a">ENTRAR</a></button>
+    </div>
+</header>
+
+<body>
+    <main class="home_main">
+        <a href="" class="blog-post_a">
+
+        </a>
+        <div class="colunas_div">
+            <div class="esquerda_div">
+                <div class="pop_div">
+                    <div class="pop-header_div">
+                        <h1 class="pop_h1">Livros Populares</h1>
+                        <div class="pop-setas_div">
+                            <button class=" seta_button" id="backward"><i data-lucide="chevron-left"></i></button>
+                            <button class=" seta_button" id="forward"><i data-lucide="chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <hr class="divider_hr">
+                    <div class="pop-capas_div">
+                        <div>
+                            <span><img src="images/capa1.jpg"></span>
+                            <span><img src="images/capa2.jpg"></span>
+                            <span><img src="images/capa3.jpg"></span>
+                            <span><img src="images/capa4.jpg"></span>
+                            <span><img src="images/capa5.jpg"></span>
+                        </div>
+                        <div>
+                            <span><img src="images/capa6.jpg"></span>
+                            <span><img src="images/capa7.jpg"></span>
+                            <span><img src="images/capa8.jpg"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pop_div">
+                    <div class="pop-header_div">
+                        <h1 class="pop_h1">Adicionados Recentemente</h1>
+                    </div>
+                    <hr class="divider_hr">
+                    <div class="pop-capas_div">
+                        <div>
+                            <span><img src="images/capa9.jpg"></span>
+                            <span><img src="images/capa10.jpg"></span>
+                            <span><img src="images/capa11.jpg"></span>
+                            <span><img src="images/capa12.jpg"></span>
+                            <span><img src="images/capa13.jpg"></span>
+                            <span><img src="images/capa14.jpg"></span>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="sobre-nos">
+                    <div class="header-sobren">
+                        <img src="images/logo-nobackground.png" class="logo-png">
+                        <div class="foto-texto">
+                            <img src="images/Monteiro_Lobato.jpg" class="foto-1">
+                            <p class="text-sob-2">
+                                A Biblioteca Monteiro Lobato é um tesouro virtual com acesso ilimitado à leitura e
+                                conhecimento. Nossa plataforma abriga uma ampla coleção de livros de diferentes gêneros
+                                e estilos, prontos para transportar os leitores para aventuras emocionantes e
+                                descobertas enriquecedoras. Com alguns cliques, mergulhe em histórias cativantes e
+                                explore sua imaginação. Acreditamos que a leitura é transformadora, capaz de inspirar,
+                                educar e entreter. Queremos despertar o prazer da leitura em todas as idades, tornando-a
+                                acessível a qualquer momento e lugar. Na Biblioteca Monteiro Lobato, cada página é uma
+                                porta para o desconhecido, uma oportunidade de aprender, crescer e se emocionar.
+                                Junte-se a nós nessa jornada literária e descubra um universo de possibilidades a cada
+                                página.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+<script>
+    let scrollContainer = document.querySelector(".pop-capas_div");
+    let backward = document.getElementById("backward");
+    let forward = document.getElementById("forward");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    forward.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 600;
+    });
+
+    backward.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 600;
+    });
+
+</script>
+</script>
+
+</html>

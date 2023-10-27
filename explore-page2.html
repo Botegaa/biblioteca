@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+    <script src="js/explore.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-header_div">
+            <a href="" class="home-button_a">
+                <img src="images/logo-nobackground.png">
+            </a>
+        </div>
+        <div class="nav_div">
+            <a href="homepage.html">HOME</a>
+            <a href="explore.html" class="this.page right">LIVROS</a>
+        </div>
+        <div class="conta_div">
+            <button class="conta_button"><a href="loginpage.html" class="entrar_a">ENTRAR</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="filtering_div">
+            <div class="topRow-filtering_div">
+                <form class="filter_form">
+                    <div class="filter-gen_div">
+                        <label for="">Gênero</label>
+                        <select name="generos">
+                            <option value=""></option>
+                            <option value="Fantasia">Fantasia</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Ficção Científica">Ficção Científica</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Terror">Terror</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="countResults_div">
+                    Exibindo <b id="count_b">5</b> resultados
+                </div>
+            </div>
+        </div>
+        <div class="book-grid_div">
+            <div class="book-card_div">
+                <img src="images/capa1.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">A Biblioteca da Meia-Noite</span>
+                    <span class="book-author">Matt Haig</span>
+                    <span class="book-summary">Um segredo oculto nas sombras da meia-noite desperta mistérios e
+                        aventuras.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa29.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">O Enigma de Andrômeda</span>
+                    <span class="book-author">Michael Crichton</span>
+                    <span class="book-summary">
+                        Uma ameaça extraterrestre coloca a humanidade à beira do colapso. Sobrevivência é a única opção.
+                    </span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa28.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Forward</span>
+                    <span class="book-author">Blake Crouch</span>
+                    <span class="book-summary">Uma coleção de histórias futurísticas que exploram possibilidades
+                        inovadoras e desafiam os limites da realidade. </span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa27.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Materia Escura</span>
+                    <span class="book-author">Blake Crouch</span>
+                    <span class="book-summary">Em uma realidade alternativa, um cientista luta para encontrar sua
+                        família. </span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa3.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Os Sete Maridos de Evelyn Hugo</span>
+                    <span class="book-author">Taylor Jenkins Reid</span>
+                    <span class="book-summary">A lendária estrela Evelyn Hugo revela sua vida glamorosa e os segredos
+                        por trás de seus sete casamentos em uma história envolvente.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa26.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">A História Secreta</span>
+                    <span class="book-author">Donna Tartt</span>
+                    <span class="book-summary">Donna Tartt nos presenteia com uma história envolvente, onde segredos
+                        sombrios e tragédias permeiam a vida de um grupo de estudantes universitários.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa25.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Tudo e Todas as Coisas</span>
+                    <span class="book-author">Nicola Yoon</span>
+                    <span class="book-summary">Uma história de amor proibido desafia todas as regras quando uma jovem
+                        descobre o mundo além de sua doença.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa8.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">A Vida Invisível de Addie LaRue</span>
+                    <span class="book-author">V.E. Schwab</span>
+                    <span class="book-summary">Addie Larue faz um pacto com o diabo e ganha a imortalidade, mas é
+                        condenada a ser esquecida por todos que conhece.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa11.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">As Musas</span>
+                    <span class="book-author">Alex Michaelides</span>
+                    <span class="book-summary">Um terapeuta se envolve com uma paciente que é acusada de assassinar seu
+                        marido, desencadeando uma trama cheia de reviravoltas.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa23.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Imperfeitos</span>
+                    <span class="book-author">Christina Lauren</span>
+                    <span class="book-summary">Em um casamento desastroso, uma mulher e o irmão do noivo embarcam em uma
+                        lua de mel cheia de reviravoltas inesperadas.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa6.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Os Dois Morrem no Final</span>
+                    <span class="book-author">Adam Silvera</span>
+                    <span class="book-summary">Um romance angustiante narra a história de dois amantes cujo destino
+                        inevitável é a morte.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa12.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Amigo Imaginário</span>
+                    <span class="book-author">Stephen Chbosky</span>
+                    <span class="book-summary">
+                        Uma criança cria um amigo imaginário que se revela assustadoramente real e envolve-os em
+                        perigosas aventuras.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa5.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Vermelho, Branco e Sangue Azul</span>
+                    <span class="book-author">Casey McQuiston</span>
+                    <span class="book-summary">Em um romance cativante, um príncipe e um político rival se envolvem em
+                        um romance proibido que desafia as expectativas sociais.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa7.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Manual de Assassinato Para Boas Garotas</span>
+                    <span class="book-author">Holly Jackson</span>
+                    <span class="book-summary">
+                        Quatro amigas encaram uma reviravolta sinistra quando se envolvem em um manual de assassinato,
+                        levando-as a um perigoso jogo de segredos mortais.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card_div">
+                <img src="images/capa24.jpg" class="book-cover_img">
+                <div class="book-data_div">
+                    <span class="book-title">Orgulho e Preconceito</span>
+                    <span class="book-author">Jane Austen</span>
+                    <span class="book-summary">Um romance clássico que retrata as complexidades do amor e da sociedade,
+                        desafiando os preconceitos e orgulhos que separam os protagonistas.</span>
+                    <div class="button-container_div">
+                        <button class="borrow_button">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination_div">
+            <a href="explore.html"><i data-lucide="chevron-left"></i></a>
+            <a href="explore.html">1</a>
+            <a class="active">2</a>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+<script>
+    const borrowButtons = document.querySelectorAll('.borrow_button');
+
+    borrowButtons.forEach((button) => {
+        let isBorrowed = false;
+
+        button.addEventListener('click', () => {
+            if (isBorrowed) {
+                button.textContent = 'Adquirir';
+                isBorrowed = false;
+            } else {
+                button.textContent = 'Devolver';
+                isBorrowed = true;
+            }
+        });
+    });
+</script>
+
+</html>

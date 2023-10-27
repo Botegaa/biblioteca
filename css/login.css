@@ -1,0 +1,152 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #c0a4fb;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.login-page_div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-page-logo_div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direita_div{
+    background-color: #d9fe8d;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reading_img {
+    width: 30%;
+}
+
+.login-menu_form {
+    /* background-color: aqua; */
+    box-sizing: border-box;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-menu_form input {
+    box-sizing: border-box;
+    width: 100%;    
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.login-menu_form input::placeholder {
+    font-family: 'Red Hat Text';
+    text-transform: uppercase;
+}
+
+.login-menu_form a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#entrar {
+    background-color: #dac9ff;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    max-width: 40%;
+    padding: 10px 20px;
+    font-family: 'Red Hat Text';
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#entrar:hover {
+    background-color: #eae0ff;
+}
+
+.fazer-cadastro_div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.readings_img {
+    width: 30%;
+}
+
+.signin-menu_form {
+    /* background-color: aqua; */
+    box-sizing: border-box;
+    width: 35%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signin-menu_form input {
+    box-sizing: border-box;
+    width: 100%;    
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.signin-menu_form input::placeholder {
+    font-family: 'Red Hat Text';
+    text-transform: uppercase;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
